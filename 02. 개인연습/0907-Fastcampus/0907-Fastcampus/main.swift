@@ -225,23 +225,23 @@ print(RemoveDupli(num: duplicatedList))
 
 
 
-//func test() -> Int {
-//    
-//    var totalNum :Int = 0
-//    
-//    for numStr in list {
-//        
-//        let num:Int = Int(numStr)!
-//        totalNum = totalNum + num
-//        
-//        
-//    }
-//    
-//    return totalNum
-//}
-//
-//var listPrint = test()
-//print(listPrint)
+func test() -> Int {
+    
+    var totalNum :Int = 0
+    
+    for numStr in list {
+        
+        let num:Int = Int(numStr)!
+        totalNum = totalNum + num
+        
+        
+    }
+    
+    return totalNum
+}
+
+var listPrint = test()
+print(listPrint)
 
 
 
