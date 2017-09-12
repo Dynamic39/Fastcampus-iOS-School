@@ -274,50 +274,43 @@ func ceaser(data :[String], keyNum :Int) -> [String]{
     
     var alphabet :[String] = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
 
+    var push = 0
+    
+    if keyNum > 26 {
+        push = keyNum % 26
+    }else{
+        push = keyNum
+    }
     
     var resultValue :[String] = []
+    
+    
+
 
     for j in 0..<data.count {
         
         let temp = alphabet.index(of: data[j])!
-        resultValue.append(alphabet[temp+4])
+        if temp+push > 26 {
+            push = push - 25
+            resultValue.append(alphabet[j+push])
+        }else if temp+push == 26{
+            resultValue.append(alphabet[0])
+        }else{
+                resultValue.append(alphabet[j+push])
+            }
+        
+
         
     }
 
     return resultValue
 }
 
-print(ceaser(data: ["o", "p", "q", "r"], keyNum: 4))
+print(ceaser(data: ["a", "b", "c", "d"], keyNum: 30))
+
+print(101%26)
 
 
-
-//별쌓기
-//1. 끝에서부터 내려오고
-//2. 시작할때 올라가고
-
-
-func makeAStar(num: Int) {
-    
-    let star = "*"
-    var resultStar = ""
-    
-    for i in 0..<num {
-        
-        for j in num-1..<num {
-        
-        resultStar += star
-        
-        }
-    print(resultStar)
-
-        for j in 
-    }
-    
-    
-}
-
-
-print(makeAStar(num: 5))
 
 
 
