@@ -84,7 +84,9 @@ class ViewController: UIViewController {
     //차량 구입시 실행되는 기능
     @IBAction func buy(_ sender: Any) {
         
-        if Int(productPrice.text!)! < Int(myAccoutBalance.text!)! {
+        if productPrice.text! == "" || productPrice.text! == "제품을 선택하여 주십시오!" {
+            productPrice.text! = "제품을 선택하여 주십시오!"
+        }else if Int(productPrice.text!)! < Int(myAccoutBalance.text!)! {
             var temp1: Int = 0
             temp1 = Int(myAccoutBalance.text!)! - Int(productPrice.text!)!
             
@@ -92,7 +94,6 @@ class ViewController: UIViewController {
             
             buySuccess.text = "구입에 성공하셨습니다."
             productPrice.text = ""
-            
         }else{
             buySuccess.text = "통장 잔액이 부족합니다."
         }
