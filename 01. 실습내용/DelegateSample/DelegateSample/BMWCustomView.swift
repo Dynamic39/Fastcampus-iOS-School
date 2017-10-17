@@ -26,6 +26,13 @@ class BMWCustomView: UIView {
         delegate?.SwitchSelected(self)
     }
     
+    func addTarget(_ target: Any?, action: Selector, for: UIControlEvents) {
+        
+        BmwCarSwitch.addTarget(target, action: action, for: UIControlEvents.touchUpInside)
+        
+    }
+    
+    
     //뷰화면이 로드되었을때, 처음 실행되는 구간을 설정
     
     override func awakeFromNib() {

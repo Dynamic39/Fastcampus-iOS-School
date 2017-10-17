@@ -20,12 +20,17 @@ class LoginViewController: UIViewController {
     
     var userModel = UserModel()
     
+    var userLogInformation:[String:Any] = ["userID":"Sam", "userPW":"Kyu", "userMail":"kang@gmail.com", "gender":1]
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         loginButton.layer.cornerRadius = 10
         signUpButton.layer.cornerRadius = 10
+        
+        let userLogin = LoginModel(dataDic: userLogInformation)
+        print(userLogin)
         
     }
     

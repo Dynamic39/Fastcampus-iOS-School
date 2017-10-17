@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FCE6D0371F8F588E0043C064 /* bowling_ball.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FCE6D0361F8F58890043C064 /* bowling_ball.jpg */; };
 		FCFCA4A01F8F3A5700D442CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFCA49F1F8F3A5700D442CF /* AppDelegate.swift */; };
 		FCFCA4A21F8F3A5700D442CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFCA4A11F8F3A5700D442CF /* ViewController.swift */; };
 		FCFCA4A51F8F3A5700D442CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCFCA4A31F8F3A5700D442CF /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FCE6D0361F8F58890043C064 /* bowling_ball.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bowling_ball.jpg; sourceTree = "<group>"; };
 		FCFCA49C1F8F3A5700D442CF /* AutolayoutSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutolayoutSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCFCA49F1F8F3A5700D442CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCFCA4A11F8F3A5700D442CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			children = (
 				FCFCA49F1F8F3A5700D442CF /* AppDelegate.swift */,
 				FCFCA4A11F8F3A5700D442CF /* ViewController.swift */,
+				FCE6D0361F8F58890043C064 /* bowling_ball.jpg */,
 				FCFCA4A31F8F3A5700D442CF /* Main.storyboard */,
 				FCFCA4A61F8F3A5700D442CF /* Assets.xcassets */,
 				FCFCA4A81F8F3A5700D442CF /* LaunchScreen.storyboard */,
@@ -126,6 +129,7 @@
 				FCFCA4AA1F8F3A5700D442CF /* LaunchScreen.storyboard in Resources */,
 				FCFCA4A71F8F3A5700D442CF /* Assets.xcassets in Resources */,
 				FCFCA4A51F8F3A5700D442CF /* Main.storyboard in Resources */,
+				FCE6D0371F8F588E0043C064 /* bowling_ball.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
