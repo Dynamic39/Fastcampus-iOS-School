@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC0505201F6BE68000449FA6 /* Start.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FC05051E1F6BE68000449FA6 /* Start.jpg */; };
+		FC0505251F6BE79C00449FA6 /* BMWi8.png in Resources */ = {isa = PBXBuildFile; fileRef = FC0505211F6BE79C00449FA6 /* BMWi8.png */; };
+		FC0505261F6BE79C00449FA6 /* BMW7.png in Resources */ = {isa = PBXBuildFile; fileRef = FC0505221F6BE79C00449FA6 /* BMW7.png */; };
+		FC0505271F6BE79C00449FA6 /* BMW5.png in Resources */ = {isa = PBXBuildFile; fileRef = FC0505231F6BE79C00449FA6 /* BMW5.png */; };
+		FC0505281F6BE79C00449FA6 /* BMW3.png in Resources */ = {isa = PBXBuildFile; fileRef = FC0505241F6BE79C00449FA6 /* BMW3.png */; };
+		FC05052A1F6BE91300449FA6 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = FC0505291F6BE91300449FA6 /* background.png */; };
 		FCA51A6E1F6BD2A000EC4212 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA51A6D1F6BD2A000EC4212 /* AppDelegate.swift */; };
 		FCA51A701F6BD2A000EC4212 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA51A6F1F6BD2A000EC4212 /* ViewController.swift */; };
 		FCA51A731F6BD2A000EC4212 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCA51A711F6BD2A000EC4212 /* Main.storyboard */; };
@@ -15,6 +21,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FC05051E1F6BE68000449FA6 /* Start.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Start.jpg; sourceTree = "<group>"; };
+		FC0505211F6BE79C00449FA6 /* BMWi8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BMWi8.png; sourceTree = "<group>"; };
+		FC0505221F6BE79C00449FA6 /* BMW7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BMW7.png; sourceTree = "<group>"; };
+		FC0505231F6BE79C00449FA6 /* BMW5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BMW5.png; sourceTree = "<group>"; };
+		FC0505241F6BE79C00449FA6 /* BMW3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BMW3.png; sourceTree = "<group>"; };
+		FC0505291F6BE91300449FA6 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 		FCA51A6A1F6BD2A000EC4212 /* CustomVendingMachine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomVendingMachine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCA51A6D1F6BD2A000EC4212 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCA51A6F1F6BD2A000EC4212 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +47,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FC05051C1F6BE5EE00449FA6 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
 		FCA51A611F6BD2A000EC4212 = {
 			isa = PBXGroup;
 			children = (
@@ -54,7 +73,14 @@
 		FCA51A6C1F6BD2A000EC4212 /* CustomVendingMachine */ = {
 			isa = PBXGroup;
 			children = (
+				FC05051C1F6BE5EE00449FA6 /* Resource */,
 				FCA51A6D1F6BD2A000EC4212 /* AppDelegate.swift */,
+				FC0505211F6BE79C00449FA6 /* BMWi8.png */,
+				FC0505221F6BE79C00449FA6 /* BMW7.png */,
+				FC0505231F6BE79C00449FA6 /* BMW5.png */,
+				FC0505241F6BE79C00449FA6 /* BMW3.png */,
+				FC0505291F6BE91300449FA6 /* background.png */,
+				FC05051E1F6BE68000449FA6 /* Start.jpg */,
 				FCA51A6F1F6BD2A000EC4212 /* ViewController.swift */,
 				FCA51A711F6BD2A000EC4212 /* Main.storyboard */,
 				FCA51A741F6BD2A000EC4212 /* Assets.xcassets */,
@@ -123,9 +149,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC0505271F6BE79C00449FA6 /* BMW5.png in Resources */,
+				FC05052A1F6BE91300449FA6 /* background.png in Resources */,
+				FC0505281F6BE79C00449FA6 /* BMW3.png in Resources */,
 				FCA51A781F6BD2A000EC4212 /* LaunchScreen.storyboard in Resources */,
+				FC0505261F6BE79C00449FA6 /* BMW7.png in Resources */,
 				FCA51A751F6BD2A000EC4212 /* Assets.xcassets in Resources */,
 				FCA51A731F6BD2A000EC4212 /* Main.storyboard in Resources */,
+				FC0505201F6BE68000449FA6 /* Start.jpg in Resources */,
+				FC0505251F6BE79C00449FA6 /* BMWi8.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +331,7 @@
 				FCA51A7E1F6BD2A000EC4212 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

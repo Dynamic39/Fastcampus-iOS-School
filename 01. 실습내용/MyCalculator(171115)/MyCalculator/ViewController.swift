@@ -35,84 +35,109 @@ class ViewController: UIViewController {
     var resultVal: Int = 0
     //사칙 연산 2회 이상 사용시, 결과값이 임시 저장됨
     var temp1: Int = 0
+    var temp2: Int = 0 // 2회 계산을 위한 임시 저장소, 완성 후, 이름 변경
+    var temp3: Int = 0
     
-    var isPlus: Bool = false
-    var isMinus: Bool = false
-    var isMutiple: Bool = false
-    var isDivide: Bool = false
+    var stackVal: [Int] = [0]
+    var calculVal: [String] = []
+
+    
+    var calAction1: String = ""
+    var calAction2: String = ""
+    
     var isON: Bool = false
 
     // 사칙연산 버튼 입력 값에 따라 각 해당하는 Bool 값을 변화시킴
+    
     @IBAction func operationBtnClick(_ sender: UIButton) {
         
-        let valueInSwitch:String = (sender.titleLabel?.text)!
+        //연산자에 didset, willset 을 사용하여 진행할 것
+        
+        
+
+
+//        let valueInSwitch:String = (sender.titleLabel?.text)!
+//        
+//
+//        switch valueInSwitch {
+//        case "+" :
+//
+//            temp1 = Int(displayLabel.text!)!
+//            
+//            if temp2 == 0 || calAction1 != "+" {
+//                temp2 = temp1
+//                calAction1 = "+"
+//            }else if temp2 != 0 && calAction1 == "+" {
+//                temp2 = temp2 + temp1
+        
+//                calAction2 = "+"
+//                calAction1 = ""
+//            }
+//            
+//            displayLabel.text = ""
+//
+//
+//        case "-" :
+//            temp1 = Int(displayLabel.text!)!
+//            
+//            if temp2 == 0 || calAction1 != "-" {
+//                temp2 = temp1
+//                calAction1 = "-"
+//                
+//            }else if temp2 != 0 && calAction1 == "-" {
+//                temp2 = temp2 - temp1
+//                calAction2 = "-"
+//                calAction1 = ""
+//            }
+//            
+//            displayLabel.text = ""
+//
+//        case "X" :
+//            temp1 = Int(displayLabel.text!)!
+//            
+//            if temp2 == 0 {
+//                temp2 = temp1
+//            }else if temp2 != 0 && calAction1 == "*" {
+//                temp2 = temp2 * temp1
+//                calAction2 = "*"
+//            }
+//            
+//            displayLabel.text = ""
+//            calAction1 = "*"
+//
+//        case "/" :
+//            temp1 = Int(displayLabel.text!)!
+//            
+//            if temp2 == 0 {
+//                temp2 = temp1
+//            }else if temp2 != 0 && calAction1 == "/" {
+//                temp2 = temp2 / temp1
+//                calAction2 = "/"
+//            }
+//            
+//            displayLabel.text = ""
+//            calAction1 = "/"
+//
+//            
+//        default:
+//            print("입력값이 잘못되었습니다.")
+//        }
+//        
     
-        switch valueInSwitch {
-        case "+" :
-            temp1 = resultVal + Int(displayLabel.text!)!
-            displayLabel.text = ""
-            isMinus = true
-        case "-" :
-            resultVal = Int(displayLabel.text!)!
-            displayLabel.text = ""
-            isMinus = true
-        case "*" :
-            resultVal = Int(displayLabel.text!)!
-            displayLabel.text = ""
-            isMinus = true
-        case "/" :
-            resultVal = Int(displayLabel.text!)!
-            displayLabel.text = ""
-            isMinus = true
-            
-            
-        default:
-            print("입력값이 잘못되었습니다.")
-        }
-        
-        
-//        if sender.titleLabel?.text == "+" {
-//            
-//            temp1 = resultVal + Int(displayLabel.text!)!
-//            displayLabel.text = ""
-//            isPlus = true
-//            
-//        }
-//        if sender.titleLabel?.text == "-" {
-//            
-//            resultVal = Int(displayLabel.text!)!
-//            displayLabel.text = ""
-//            isMinus = true
-//            
-//        }
-//        if sender.titleLabel?.text == "X" {
-//            
-//            resultVal = Int(displayLabel.text!)!
-//            displayLabel.text = ""
-//            isMutiple = true
-//            
-//        }
-//        if sender.titleLabel?.text == "/" {
-//            
-//            resultVal = Int(displayLabel.text!)!
-//            displayLabel.text = ""
-//            isDivide = true
-//            
-//        }
-        
-        
-        
     }
     
     // UI로부터 숫자입력을 받아오는 기능 추가
     @IBAction func numberKeyClick(btn:UIButton)
     {
+        
+
 
             if displayLabel.text! == "0" {
                 
                 displayLabel.text! = btn.titleLabel!.text!
             }else if isON {
                 displayLabel.text! = btn.titleLabel!.text!
+                resultVal = 0
                 isON = false
             }else{
                 displayLabel.text! += btn.titleLabel!.text!
@@ -121,42 +146,47 @@ class ViewController: UIViewController {
     }
     
     
-    // 두번째 값이 입력되었을때, 각 연산자의 Bool값에 따라 사칙연산 실시(1회, 아직 다중 실행 안됨)
+   // 두번째 값이 입력되었을때, 각 연산자의 Bool값에 따라 사칙연산 실시(1회, 아직 다중 실행 안됨)
     @IBAction func resultPrint(_ sender: UIButton) {
         
-        if isPlus == true {
+        temp3 = Int(displayLabel.text!)!
+        
+        if calAction1 == "+" || calAction2 == "+" {
             
-            temp1 = temp1 + Int(displayLabel.text!)!
-            isPlus = false
+            resultVal = temp2 + Int(displayLabel.text!)!
+            print(temp1)
+            print(temp2)
 
-        }else if isMinus == true {
+        }else if  calAction1 == "-" || calAction2 == "-"  {
             
-            temp1 = resultVal - Int(displayLabel.text!)!
-            isMinus = false
-
-        }else if isMutiple == true {
+            resultVal = temp2 - Int(displayLabel.text!)!
             
-            temp1 = resultVal * Int(displayLabel.text!)!
-            isMutiple = false
-
-        }else if isDivide == true {
+        }else if  calAction1 == "*" || calAction2 == "*"  {
+            
+            resultVal = temp2 * Int(displayLabel.text!)!
+            
+        }else if calAction1 == "*" || calAction2 == "*" {
             
             if displayLabel.text! == "0" {
                 displayLabel.text = "연산 오류"
-                
-                isDivide = false
 
             }else{
-                temp1 = resultVal / Int(displayLabel.text!)!
-                
-                isDivide = false
+                resultVal = temp2 / Int(displayLabel.text!)!
 
             }
             
+            
+            
         }
         
-        isON = true
         displayLabel.text! = String(resultVal)
+        calAction1 = ""
+        calAction2 = ""
+        temp1 = 0
+        temp2 = 0
+        temp3 = 0
+        isON = true
+
         
     }
     
@@ -168,7 +198,10 @@ class ViewController: UIViewController {
     @IBAction func deleteNum(btn:UIButton)
     {
         displayLabel.text = "0"
-        temp1 = 0
+        calAction1 = ""
+        calAction2 = ""
+        isON = false
+
     }
 
     

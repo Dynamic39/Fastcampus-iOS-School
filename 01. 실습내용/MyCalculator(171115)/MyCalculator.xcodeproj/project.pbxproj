@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC0505541F72386700449FA6 /* UpgradeCalculatorVIewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0505531F72386700449FA6 /* UpgradeCalculatorVIewController.swift */; };
+		FC0505561F727B2100449FA6 /* SampleCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0505551F727B2100449FA6 /* SampleCode.swift */; };
 		FC74F86A1F667F0E0052D4CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC74F8691F667F0E0052D4CD /* AppDelegate.swift */; };
 		FC74F86C1F667F0E0052D4CD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC74F86B1F667F0E0052D4CD /* ViewController.swift */; };
 		FC74F86F1F667F0E0052D4CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC74F86D1F667F0E0052D4CD /* Main.storyboard */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FC0505531F72386700449FA6 /* UpgradeCalculatorVIewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpgradeCalculatorVIewController.swift; sourceTree = "<group>"; };
+		FC0505551F727B2100449FA6 /* SampleCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleCode.swift; sourceTree = "<group>"; };
 		FC74F8661F667F0E0052D4CD /* MyCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC74F8691F667F0E0052D4CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC74F86B1F667F0E0052D4CD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +68,8 @@
 			children = (
 				FC74F8691F667F0E0052D4CD /* AppDelegate.swift */,
 				FC74F86B1F667F0E0052D4CD /* ViewController.swift */,
+				FC0505531F72386700449FA6 /* UpgradeCalculatorVIewController.swift */,
+				FC0505551F727B2100449FA6 /* SampleCode.swift */,
 				FC74F86D1F667F0E0052D4CD /* Main.storyboard */,
 				FC74F88E1F67B9A70052D4CD /* Subject.swift */,
 				FC74F8901F67CEA70052D4CD /* Student.swift */,
@@ -150,7 +156,9 @@
 			files = (
 				FC74F8931F67CEBA0052D4CD /* Pokemon.swift in Sources */,
 				FC74F86C1F667F0E0052D4CD /* ViewController.swift in Sources */,
+				FC0505561F727B2100449FA6 /* SampleCode.swift in Sources */,
 				FC74F86A1F667F0E0052D4CD /* AppDelegate.swift in Sources */,
+				FC0505541F72386700449FA6 /* UpgradeCalculatorVIewController.swift in Sources */,
 				FC74F88F1F67B9A70052D4CD /* Subject.swift in Sources */,
 				FC74F8951F67D0E40052D4CD /* SubjectCalculation.swift in Sources */,
 				FC74F8911F67CEA70052D4CD /* Student.swift in Sources */,
