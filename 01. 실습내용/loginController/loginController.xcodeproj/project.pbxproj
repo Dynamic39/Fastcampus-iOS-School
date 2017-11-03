@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FC0847D01F949119005A7107 /* LoginDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0847CF1F949119005A7107 /* LoginDataModel.swift */; };
+		FCDEB3B91F9DC1670077D573 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDEB3B81F9DC1670077D573 /* SignUpViewController.swift */; };
 		FCFD7EBC1F7B362300796F81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFD7EBB1F7B362300796F81 /* AppDelegate.swift */; };
 		FCFD7EBE1F7B362300796F81 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFD7EBD1F7B362300796F81 /* ViewController.swift */; };
 		FCFD7EC11F7B362300796F81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCFD7EBF1F7B362300796F81 /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		FC0847CF1F949119005A7107 /* LoginDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDataModel.swift; sourceTree = "<group>"; };
+		FCDEB3B81F9DC1670077D573 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		FCFD7EB81F7B362300796F81 /* loginController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = loginController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCFD7EBB1F7B362300796F81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCFD7EBD1F7B362300796F81 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				FCFD7ED41F7B4C7000796F81 /* SignUpViewController.swift */,
 				FC0847CF1F949119005A7107 /* LoginDataModel.swift */,
 				FCFD7ED21F7B3D6100796F81 /* LoginViewController.swift */,
+				FCDEB3B81F9DC1670077D573 /* SignUpViewController.swift */,
 				FCFD7ED61F7B6F6C00796F81 /* UserModel.swift */,
 				FCFD7EBF1F7B362300796F81 /* Main.storyboard */,
 				FCFD7EC41F7B362300796F81 /* LaunchScreen.storyboard */,
@@ -169,6 +172,7 @@
 			files = (
 				FCFD7ED31F7B3D6100796F81 /* LoginViewController.swift in Sources */,
 				FCFD7EBE1F7B362300796F81 /* ViewController.swift in Sources */,
+				FCDEB3B91F9DC1670077D573 /* SignUpViewController.swift in Sources */,
 				FCFD7ED51F7B4C7000796F81 /* SignUpViewController.swift in Sources */,
 				FC0847D01F949119005A7107 /* LoginDataModel.swift in Sources */,
 				FCFD7ED91F7B7C4D00796F81 /* MainViewController.swift in Sources */,

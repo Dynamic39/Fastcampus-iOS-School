@@ -14,10 +14,17 @@
 내부데이터, 내부연산을 외부에서 접근하지 못하도록 격리 시키는 것
 * 상속성
 상위 개념의 특징을 하위 개념이 물려받는것
-
+ 
 * 다형성
 부모 클래스에서 물려 받은 가상 함수를 자식 클래스 내에서 오버라이딩 되어 사용 되는 것
 여러 클래스들이 동일한 이름의 오퍼레이션을 여럿 정의 하는 것
+
+
+#### 테스트 내부 링크
+
+[내부링크](/강의자료/ios_5_0904.pdf)
+
+[https 링크 0911.pdf](https://github.com/Dynamic39/Fastcampus-iOS-School/blob/master/%EA%B0%95%EC%9D%98%EC%9E%90%EB%A3%8C/ios_5_0911.pdf)
 
 ## 출처
 * [위키페디아 추상화](https://ko.wikipedia.org/wiki/%EA%B0%9D%EC%B2%B4_%EC%A7%80%ED%96%A5_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D#.EC.9E.90.EB.A3.8C_.EC.B6.94.EC.83.81.ED.99.94)
