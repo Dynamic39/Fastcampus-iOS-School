@@ -37,7 +37,11 @@ class PsyTestTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return 4
+        //숫자는 확인하여 다른 값으로 변경하여 줄것
+        
+        guard let returnCounter:Int = exampleData?.exampleList.count else {return 0}
+        
+        return returnCounter
     }
 
     

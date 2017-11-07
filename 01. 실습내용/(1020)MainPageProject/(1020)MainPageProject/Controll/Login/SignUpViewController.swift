@@ -114,32 +114,17 @@ class SignUpViewController: UIViewController {
             list.append(userData)
             
             //생성한 딕셔너리를 배열에 인스턴스 값으로 전달
-            
-            
-            
             UserDefaults.standard.set(list, forKey: "UserList")
-            
-            
-            
+  
 //            UserDefaults.standard.set(newID, forKey: "ID")
 //            UserDefaults.standard.set(newPassword, forKey: "PW")
-            
-            
-            
-            
-            
+   
             dismiss(animated: true, completion: nil)
             
         }else{
             
             print("입력하신 패스워드가 일치 하지 않습니다.")
         }
-        
-        
-        
-        
-        
-        
     }
     
     @IBAction func didTapExitButton(_ sender: UIButton) {
