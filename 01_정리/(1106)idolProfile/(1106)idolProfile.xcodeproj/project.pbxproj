@@ -7,15 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC2E69041FB1E2750048F3F1 /* FreindInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = FC2E69031FB1E2750048F3F1 /* FreindInfo.plist */; };
+		FC2E69061FB1E2890048F3F1 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2E69051FB1E2890048F3F1 /* DataModel.swift */; };
 		FC6D11781FB0ADB000F74A7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6D11771FB0ADB000F74A7E /* AppDelegate.swift */; };
 		FC6D117D1FB0ADB000F74A7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC6D117B1FB0ADB000F74A7E /* Main.storyboard */; };
 		FC6D117F1FB0ADB000F74A7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC6D117E1FB0ADB000F74A7E /* Assets.xcassets */; };
 		FC6D11821FB0ADB000F74A7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC6D11801FB0ADB000F74A7E /* LaunchScreen.storyboard */; };
 		FC6D118A1FB0B18400F74A7E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6D11891FB0B18400F74A7E /* LoginViewController.swift */; };
 		FC6D11911FB140A400F74A7E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6D11901FB140A400F74A7E /* SignUpViewController.swift */; };
+		FCA95F001FB3DFE5002C0885 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA95EFF1FB3DFE5002C0885 /* StartViewController.swift */; };
+		FCDD0E561FB34C5900633586 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDD0E551FB34C5900633586 /* CustomTableViewCell.swift */; };
+		FCEFA6581FB3475300333AE7 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEFA6571FB3475300333AE7 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FC2E69031FB1E2750048F3F1 /* FreindInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = FreindInfo.plist; path = "../../../02_실습내용/(1020)MainPageProject/(1020)MainPageProject/FreindInfo.plist"; sourceTree = "<group>"; };
+		FC2E69051FB1E2890048F3F1 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		FC6D11741FB0ADB000F74A7E /* (1106)idolProfile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "(1106)idolProfile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC6D11771FB0ADB000F74A7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC6D117C1FB0ADB000F74A7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -24,6 +31,9 @@
 		FC6D11831FB0ADB000F74A7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC6D11891FB0B18400F74A7E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FC6D11901FB140A400F74A7E /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		FCA95EFF1FB3DFE5002C0885 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		FCDD0E551FB34C5900633586 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		FCEFA6571FB3475300333AE7 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +71,7 @@
 				FC6D118B1FB0B27700F74A7E /* Model */,
 				FC6D11771FB0ADB000F74A7E /* AppDelegate.swift */,
 				FC6D117B1FB0ADB000F74A7E /* Main.storyboard */,
+				FC2E69031FB1E2750048F3F1 /* FreindInfo.plist */,
 				FC6D117E1FB0ADB000F74A7E /* Assets.xcassets */,
 				FC6D11801FB0ADB000F74A7E /* LaunchScreen.storyboard */,
 				FC6D11831FB0ADB000F74A7E /* Info.plist */,
@@ -71,6 +82,7 @@
 		FC6D118B1FB0B27700F74A7E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FC2E69051FB1E2890048F3F1 /* DataModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -80,6 +92,8 @@
 			children = (
 				FC6D11891FB0B18400F74A7E /* LoginViewController.swift */,
 				FC6D11901FB140A400F74A7E /* SignUpViewController.swift */,
+				FCEFA6571FB3475300333AE7 /* ProfileViewController.swift */,
+				FCA95EFF1FB3DFE5002C0885 /* StartViewController.swift */,
 			);
 			path = Controll;
 			sourceTree = "<group>";
@@ -87,6 +101,7 @@
 		FC6D118D1FB0B27D00F74A7E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FCDD0E551FB34C5900633586 /* CustomTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -152,6 +167,7 @@
 			files = (
 				FC6D11821FB0ADB000F74A7E /* LaunchScreen.storyboard in Resources */,
 				FC6D117F1FB0ADB000F74A7E /* Assets.xcassets in Resources */,
+				FC2E69041FB1E2750048F3F1 /* FreindInfo.plist in Resources */,
 				FC6D117D1FB0ADB000F74A7E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -163,7 +179,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCDD0E561FB34C5900633586 /* CustomTableViewCell.swift in Sources */,
+				FCA95F001FB3DFE5002C0885 /* StartViewController.swift in Sources */,
 				FC6D11911FB140A400F74A7E /* SignUpViewController.swift in Sources */,
+				FC2E69061FB1E2890048F3F1 /* DataModel.swift in Sources */,
+				FCEFA6581FB3475300333AE7 /* ProfileViewController.swift in Sources */,
 				FC6D118A1FB0B18400F74A7E /* LoginViewController.swift in Sources */,
 				FC6D11781FB0ADB000F74A7E /* AppDelegate.swift in Sources */,
 			);

@@ -68,12 +68,6 @@ class LoginViewController: UIViewController {
 
             self.present(alertController, animated: true, completion: nil)
 
-
-
-            
-
-            
-            
             return
             
         }else{

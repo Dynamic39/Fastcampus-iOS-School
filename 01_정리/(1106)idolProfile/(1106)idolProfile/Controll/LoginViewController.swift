@@ -44,6 +44,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         registerBtn.layer.cornerRadius = 12
 
     }
+    
     // MARK: 로그인 화면 구현
     //로그인 버튼을 눌렀을 때, 아이디/패스워드를 확인하는 기능을 구현
     @IBAction func loginAct(_ sender: Any) {
@@ -55,11 +56,18 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             isLoginCondition = true
             print("다음화면으로 넘어갑니다")
             let alert = UIAlertController(title: "로그인 성공!", message: nil, preferredStyle: .alert)
-            let action = UIAlertAction(title: "확인", style: .default, handler: nil)
+            let action = UIAlertAction(title: "확인", style: .default, handler:{(action) in
+                
+                // 다음 테이블 뷰 컨트롤러로 넘어가게 함!
+                //네비게이션 넘어가는 부분 학습할 것, 시작점이 네비게이션 컨트롤러기 때문에, 네비게이션 루트뷰 쪽으로 넘겨줘서 실행을 시켜줘야 한다.
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                let tableVC = storyboard.instantiateViewController(withIdentifier: "nextView") as? UINavigationController
+                self.present(tableVC!, animated: true, completion: nil)
+                
+            })
             alert.addAction(action)
             present(alert, animated: true, completion: nil)
             
-            // 다음 로그인 컨트롤러로 넘어가게 함!
             
         }
     }
