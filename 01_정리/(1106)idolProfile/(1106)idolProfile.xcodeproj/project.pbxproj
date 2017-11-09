@@ -15,6 +15,7 @@
 		FC6D11821FB0ADB000F74A7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC6D11801FB0ADB000F74A7E /* LaunchScreen.storyboard */; };
 		FC6D118A1FB0B18400F74A7E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6D11891FB0B18400F74A7E /* LoginViewController.swift */; };
 		FC6D11911FB140A400F74A7E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6D11901FB140A400F74A7E /* SignUpViewController.swift */; };
+		FCA8AE461FB46A91008B43A2 /* Settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = FCA8AE451FB46A91008B43A2 /* Settings.plist */; };
 		FCA95F001FB3DFE5002C0885 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA95EFF1FB3DFE5002C0885 /* StartViewController.swift */; };
 		FCDD0E561FB34C5900633586 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDD0E551FB34C5900633586 /* CustomTableViewCell.swift */; };
 		FCEFA6581FB3475300333AE7 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEFA6571FB3475300333AE7 /* ProfileViewController.swift */; };
@@ -31,6 +32,7 @@
 		FC6D11831FB0ADB000F74A7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC6D11891FB0B18400F74A7E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FC6D11901FB140A400F74A7E /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		FCA8AE451FB46A91008B43A2 /* Settings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Settings.plist; path = "../../../02_실습내용/(1020)MainPageProject/(1020)MainPageProject/Settings.plist"; sourceTree = "<group>"; };
 		FCA95EFF1FB3DFE5002C0885 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		FCDD0E551FB34C5900633586 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		FCEFA6571FB3475300333AE7 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				FC6D11771FB0ADB000F74A7E /* AppDelegate.swift */,
 				FC6D117B1FB0ADB000F74A7E /* Main.storyboard */,
 				FC2E69031FB1E2750048F3F1 /* FreindInfo.plist */,
+				FCA8AE451FB46A91008B43A2 /* Settings.plist */,
 				FC6D117E1FB0ADB000F74A7E /* Assets.xcassets */,
 				FC6D11801FB0ADB000F74A7E /* LaunchScreen.storyboard */,
 				FC6D11831FB0ADB000F74A7E /* Info.plist */,
@@ -169,6 +172,7 @@
 				FC6D117F1FB0ADB000F74A7E /* Assets.xcassets in Resources */,
 				FC2E69041FB1E2750048F3F1 /* FreindInfo.plist in Resources */,
 				FC6D117D1FB0ADB000F74A7E /* Main.storyboard in Resources */,
+				FCA8AE461FB46A91008B43A2 /* Settings.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

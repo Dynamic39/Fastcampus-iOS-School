@@ -30,7 +30,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="81.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sUb-Wq-BIt">
+                                                <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="sUb-Wq-BIt">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="81.5"/>
                                                 </imageView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WKJ-hq-XSx">
@@ -184,5 +184,6 @@
     </scenes>
     <resources>
         <image name="Favourites_Off" width="25" height="25"/>
+        <image name="background" width="1280" height="720"/>
     </resources>
 </document>

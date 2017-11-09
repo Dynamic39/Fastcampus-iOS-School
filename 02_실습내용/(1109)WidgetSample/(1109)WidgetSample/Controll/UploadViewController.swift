@@ -12,7 +12,7 @@ class UploadViewController: UIViewController {
 
     
     @IBOutlet weak var inputTextfield: UITextField!
-    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var imageView: UIImageView?
     @IBOutlet weak var callCamera: UIButton!
     
     var textArray:[String]?
@@ -79,7 +79,7 @@ extension UploadViewController: UIImagePickerControllerDelegate, UINavigationCon
         
         dismiss(animated: true, completion: nil)
         let image = info[UIImagePickerControllerOriginalImage] as? UIImage
-        imageView.image = image
+        imageView?.image = image
         
     }
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {

@@ -128,7 +128,7 @@
             </objects>
             <point key="canvasLocation" x="-22" y="-72"/>
         </scene>
-        <!--IDOL Information-->
+        <!--Idols-->
         <scene sceneID="e6x-BJ-Wdn">
             <objects>
                 <viewController storyboardIdentifier="ProfileViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1FC-iM-I6b" customClass="ProfileViewController" customModule="_1106_idolProfile" customModuleProvider="target" sceneMemberID="viewController">
@@ -222,8 +222,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="zgw-GX-kZt"/>
                     </view>
-                    <navigationItem key="navigationItem" title="IDOL Information" id="qes-cl-E6c">
-                        <barButtonItem key="rightBarButtonItem" title="Setting" style="plain" id="xKl-nV-N8Q"/>
+                    <navigationItem key="navigationItem" title="Idols" id="qes-cl-E6c">
+                        <barButtonItem key="rightBarButtonItem" title="Setting" style="plain" id="xKl-nV-N8Q">
+                            <connections>
+                                <segue destination="IlV-9k-s4o" kind="show" id="7o0-vw-NMF"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="eNj-mf-3n0" id="p4v-QL-wQb"/>
@@ -232,6 +236,46 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xdh-zT-j0W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="778" y="707"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="lVg-Ph-x9f">
+            <objects>
+                <viewController id="IlV-9k-s4o" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ksb-pi-mzZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FRQ-2Q-nNB">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="41" id="Qdj-6s-CAf">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="41"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Qdj-6s-CAf" id="RYc-Fc-OV0">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="40.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="FRQ-2Q-nNB" firstAttribute="leading" secondItem="DtJ-ij-4Gu" secondAttribute="leading" id="Gsw-3S-3iF"/>
+                            <constraint firstItem="DtJ-ij-4Gu" firstAttribute="trailing" secondItem="FRQ-2Q-nNB" secondAttribute="trailing" id="RXh-Zz-6f6"/>
+                            <constraint firstItem="FRQ-2Q-nNB" firstAttribute="top" secondItem="DtJ-ij-4Gu" secondAttribute="top" id="VFp-OM-XVP"/>
+                            <constraint firstItem="DtJ-ij-4Gu" firstAttribute="bottom" secondItem="FRQ-2Q-nNB" secondAttribute="bottom" id="lxE-T1-yyk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="DtJ-ij-4Gu"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Settings" leftItemsSupplementBackButton="YES" id="Lnc-9t-dK1">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="18j-zu-cwJ"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gxc-5r-g7n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1549.5999999999999" y="706.59670164917543"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="oIg-o3-zJ3">

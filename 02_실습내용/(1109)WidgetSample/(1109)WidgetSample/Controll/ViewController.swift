@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     let textArray = UserDefaults.standard.object(forKey: "text") as? [String]
-    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,16 +22,13 @@ class ViewController: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
         tableView.delaysContentTouches = false
-        
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
-        
         tableView.reloadData()
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
@@ -43,7 +40,6 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
         return textArray?.count ?? 1
         
     }
@@ -56,6 +52,10 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         
         return cell!
         
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 80
     }
 }
 
